@@ -1,0 +1,39 @@
+{
+  "name": "weko-ui-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "burnworks (https://github.com/burnworks/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/html": "^6.4.18",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "storybook-preset-less": "^1.1.2",
+    "style-loader": "^3.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@pickra/copy-code-block": "^1.2.0",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.4.18",
+    "@storybook/manager-webpack5": "^6.4.18",
+    "autoprefixer": "^10.4.2",
+    "normalize.css": "^8.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "storybook-less-loader": "^0.1.0",
+    "webpack": "^5.68.0"
+  }
+}
