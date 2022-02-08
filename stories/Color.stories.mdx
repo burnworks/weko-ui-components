@@ -1,0 +1,192 @@
+import { Meta } from '@storybook/addon-docs';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="WEKO3/Color" />
+
+<style>{`
+
+  .color-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .color-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .color-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .color-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111827;
+  }
+
+  .color-blue {
+    background-color: #1e40af;
+    color: #ffffff;
+  }
+
+  .color-green {
+    background-color: #166534;
+    color: #ffffff;
+  }
+
+  .color-red {
+    background-color: #b91c1c;
+    color: #ffffff;
+  }
+
+  .color-gray {
+    background-color: #111827;
+    color: #ffffff;
+  }
+
+  .color-cyan {
+    background-color: #155E75;
+    color: #ffffff;
+  }
+
+  .color-purple {
+    background-color: #6B21A8;
+    color: #ffffff;
+  }
+
+  .color-red-ac {
+    background-color: #fef2f2;
+    color: #b91c1c;
+  }
+
+  .color-blue-ac {
+    background-color: #eff6ff;
+    color: #1e40af;
+  }
+
+  .color-green-ac {
+    background-color: #f0fdf4;
+    color: #166534;
+  }
+
+  .color-gray-ac {
+    background-color: #f9fafb;
+    color: #111827;
+  }
+
+  .color-cyan-ac {
+    background-color: #ecfeff;
+    color: #155E75;
+  }
+
+  .color-purple-ac {
+    background-color: #faf5ff;
+    color: #6B21A8;
+  }
+
+  .color-monochrome-50 {
+    background-color: #f9fafb;
+  }
+  .color-monochrome-100 {
+    background-color: #f3f4f6;
+  }
+  .color-monochrome-200 {
+    background-color: #e5e7eb;
+  }
+  .color-monochrome-300 {
+    background-color: #d1d5db;
+  }
+  .color-monochrome-400 {
+    background-color: #9ca3af;
+  }
+  .color-monochrome-500 {
+    background-color: #6b7280;
+    color: #ffffff;
+  }
+  .color-monochrome-600 {
+    background-color: #4b5563;
+    color: #ffffff;
+  }
+  .color-monochrome-700 {
+    background-color: #374151;
+    color: #ffffff;
+  }
+  .color-monochrome-800 {
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+  .color-monochrome-900 {
+    background-color: #111827;
+    color: #ffffff;
+  }
+ 
+`}</style>
+
+# Customizing Colors
+
+UI において使用可能なカラーコードを示す。
+
+## 主要カラー
+
+主で使用可能なカラーコードを示す。これらカラーは、「白」の文字色や背景色との組み合わせで使用可能（ウェブアクセシビリティにおける最低限のコントラスト比を満たす）。
+
+<div className="color-list">
+<div className="color-item color-blue">#1e40af</div>
+<div className="color-item color-green">#166534</div>
+<div className="color-item color-red">#b91c1c</div>
+<div className="color-item color-gray">#111827</div>
+<div className="color-item color-cyan">#155E75</div>
+<div className="color-item color-purple">#6B21A8</div>
+</div>
+
+## アクセントカラー
+
+アクセントとして使用可能なカラーを示す。
+
+<div className="color-list">
+<div className="color-item color-blue-ac">#1e40af</div>
+<div className="color-item color-green-ac">#166534</div>
+<div className="color-item color-red-ac">#b91c1c</div>
+<div className="color-item color-gray-ac">#111827</div>
+<div className="color-item color-cyan-ac">#155E75</div>
+<div className="color-item color-purple-ac">#6B21A8</div>
+</div>
+
+## モノクロカラー
+
+使用可能なグレーカラーを示す。
+
+<div className="color-list">
+<div className="color-item color-monochrome-50">#f9fafb</div>
+<div className="color-item color-monochrome-100">#f3f4f6</div>
+<div className="color-item color-monochrome-200">#e5e7eb</div>
+<div className="color-item color-monochrome-300">#d1d5db</div>
+<div className="color-item color-monochrome-400">#9ca3af</div>
+<div className="color-item color-monochrome-500">#6b7280</div>
+<div className="color-item color-monochrome-600">#4b5563</div>
+<div className="color-item color-monochrome-700">#374151</div>
+<div className="color-item color-monochrome-800">#1f2937</div>
+<div className="color-item color-monochrome-900">#111827</div>
+
+</div>
