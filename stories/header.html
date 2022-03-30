@@ -1,0 +1,81 @@
+<div id="header" class="grid-stack-item no-scroll-bar" data-gs-x="0" data-gs-y="0" data-gs-width="12"
+    data-gs-height="10">
+    <div class="component__header">
+        <nav class="element__header-nav navbar-default navbar-static-top full-height">
+            <div class="element__header-nav-top container-fluid container-fluid2" id="fixed_header">
+                <form class="navbar-form navbar-right navbar-form2">
+                    <a href="/login/?next=%2Fsearch"
+                        class="btn btn-default btn-primary bg-transparent login-button component__btn module__btn-gray module__btn-login">
+                        <span class="component__btn-has-icon">
+                            <span aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                                </svg>
+                            </span>
+                            <span>
+                                Log in
+                            </span>
+                        </span>
+                    </a>
+                </form>
+                <div class="component__language-select navbar-form navbar-right navbar-form2">
+                    <!--script src="/static/js/jquery/jquery.min.js"></script-->
+                    <!--script src="/static/js/weko_theme/lang_combobox.js"></script-->
+                    <form id="language-code-form" class="form form-inline lang-select text-white" action="/lang/"
+                        method="POST">
+                        <div class="form-group form-group2">
+                            <label for="lang-code">Language:</label>
+                            <select class="element__language-select form-control" id="lang-code" name="lang_code">
+                                <option value="en" selected="">English</option>
+                                <option value="ja">日本語</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <!--     <input hidden id ="weko_show_index_for_authenticated_user" value="False"> -->
+            </div>
+            <div class="component__header-nav-banner container-fluid container-fluid2" id="header_nav">
+                <div id="header_content" contenteditable="false">
+                    <div class="element__header-nav-banner-inner">
+                        <img src="assets/logo.svg" alt="logo" width="260" height="56">
+                        <span class="element__header-nav-banner-inner-text">WEKO3 demo</span>
+                    </div>
+                    <div class="resize-sensor">
+                        <div class="resize-sensor-expand">
+                            <div>
+                            </div>
+                        </div>
+                        <div class="resize-sensor-shrink">
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--
+<div class="grid-stack-item widget-resize" data-gs-x="0" data-gs-y="12" data-gs-width="12" data-gs-height="5">
+    <div class="grid-stack-item-content panel widget">
+        <div class="panel-body no-pad-top-30" id="widget_pages_menu_4_1">
+            <nav class="widget-nav navbar navbar-default widgetNav_4">
+                <div class="container-fluid container-fluid2">
+                    <div class="navbar-header">
+                        <a class="navbar-brand " href="/">Top</a>
+                    </div>
+                    <div class="collapse navbar-collapse in" id="widgetNav_4">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+-->

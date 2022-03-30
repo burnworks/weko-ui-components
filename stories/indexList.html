@@ -1,0 +1,316 @@
+<div id="main_contents">
+    <div class="component__index-list panel panel-default panel-default-2 ng-scope"
+        ng-if="vm.invenioSearchResults.aggregations.hasOwnProperty('path') &amp;&amp; (vm.invenioSearchResults.aggregations.path.buckets[0].length >= 1 || (isCommunityRootIndex &amp;&amp; vm.invenioSearchResults.aggregations.path.buckets[0].length > 1))">
+        <div class="panel-heading clearfix">
+            <h3 class="panel-title">Index List</h3>
+            <!-- ngIf: vm.invenioSearchResults.aggregations.hasOwnProperty('path') && vm.invenioSearchResults.aggregations.path.buckets[0].length > 0
+          && typeIndexList() != 'root' -->
+        </div>
+        <div class="panel-body component__index-list-reselt-wrap">
+            <div class="panel_bread">
+                <!-- ngIf: (typeIndexList !== 'root' && !isCommunityRootIndex) -->
+                <!-- ngIf: journal_info && vm.invenioSearchResults.aggregations.path.buckets[0][0].display_format == 1 -->
+            </div>
+            <span ng-hide="sort_index_list(vm.invenioSearchResults.aggregations.path.buckets[0])"></span>
+            <div id="index_tree_list">
+                <ul class="list-group">
+                    <!-- ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1637844586915" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1637844586915">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Resorce type</span><!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">6 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1637844613970" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1637844613970">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Faculty of Law and Graduate Schools for Law and
+                                    Politics</span><!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142205181" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142205181">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Faculty of Medicine and Graduate School of
+                                    Medicine</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142233761" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142233761">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Faculty of Engineering and Graduate School of
+                                    Engineering</span><!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142277526" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142277526">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Faculty of Economics and Graduate School of
+                                    Economics</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142324078" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142324078">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Faculty of Education and Graduate School of
+                                    Education</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142354774" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142354774">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Graduate School of Mathematical Sciences</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142380633" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142380633">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Graduate School of Information Science and
+                                    Technology</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">102 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1638142414130" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1638142414130">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Information Technology Center</span>
+                                <!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">0 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                    <!-- ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <div class="list-group-item break-word ng-scope"
+                        ng-repeat="index_path in sorted_child_list track by $index"
+                        ng-if="typeIndexList !== 'root' || typeIndexList === 'root'" style="position: relative;">
+                        <a ng-href="/search?search_type=2&amp;q=1640885928792" style="
+                  color: #333;
+                  display: block;
+                  padding-right: 25px;
+                " href="/search?search_type=2&amp;q=1640885928792">
+                            <div>
+                                <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                <!-- ngIf: is_permission -->
+                                <!-- ngIf: !is_permission --><span ng-if="!is_permission"
+                                    class="ng-binding ng-scope">Index
+                                    A</span><!-- end ngIf: !is_permission -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt!=0||index_path.date_range.un_pub_cnt!=0)&&(is_login) -->
+                                <!-- ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) --><span
+                                    ng-if="(index_path.date_range.pub_cnt==0&amp;&amp;index_path.date_range.un_pub_cnt==0)||(!is_login)"
+                                    class="badge ng-binding ng-scope" style="float:right">10 items </span>
+                                <!-- end ngIf: (index_path.date_range.pub_cnt==0&&index_path.date_range.un_pub_cnt==0)||(!is_login) -->
+                            </div>
+                        </a>
+                        <div style="padding-left: 14px">
+                            <span ng-bind-html="display_comment(index_path.comment) | sanitize"
+                                class="ng-binding"></span>
+                        </div>
+                        <!-- ngIf: index_path.rss_status -->
+                    </div><!-- end ngIf: typeIndexList !== 'root' || typeIndexList === 'root' -->
+                    <!-- end ngRepeat: index_path in sorted_child_list track by $index -->
+                </ul>
+            </div>
+            <!-- ngIf: vm.invenioSearchResults.aggregations.path.buckets[0][0].hasOwnProperty('img') -->
+        </div>
+    </div>
+</div>

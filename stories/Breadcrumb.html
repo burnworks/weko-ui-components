@@ -1,0 +1,24 @@
+<ol class="breadcrumb ng-scope" style="padding-bottom:0px;margin-bottom:0px" ng-if="vm.invenioSearchResults.aggregations.hasOwnProperty('path') &amp;&amp; vm.invenioSearchResults.aggregations.path.buckets[0].length > 0
+        &amp;&amp; typeIndexList() != 'root'">
+    <!-- ngRepeat: index_path in vm.invenioSearchResults.aggregations.path.buckets[0][0].key.split('/') track by $index -->
+    <li ng-repeat="index_path in vm.invenioSearchResults.aggregations.path.buckets[0][0].key.split('/') track by $index"
+        style="list-style-position: inside;
+          padding: 10px 0 10px 20px;
+          text-indent: -1em;
+          font-size:18px" class="ng-scope">
+        <!-- ngIf: !$last --><a target="_self" ng-if="!$last" ng-href="/search?search_type=2&amp;q=1637844586915"
+            class="ng-binding ng-scope" href="/search?search_type=2&amp;q=1637844586915">
+            Resorce type</a><!-- end ngIf: !$last -->
+        <!-- ngIf: $last -->
+    </li>
+    <!-- end ngRepeat: index_path in vm.invenioSearchResults.aggregations.path.buckets[0][0].key.split('/') track by $index -->
+    <li ng-repeat="index_path in vm.invenioSearchResults.aggregations.path.buckets[0][0].key.split('/') track by $index"
+        style="list-style-position: inside;
+          padding: 10px 0 10px 20px;
+          text-indent: -1em;
+          font-size:18px" class="ng-scope">
+        <!-- ngIf: !$last -->
+        <!-- ngIf: $last --><span ng-if="$last" class="ng-binding ng-scope">Evidence Data</span><!-- end ngIf: $last -->
+    </li>
+    <!-- end ngRepeat: index_path in vm.invenioSearchResults.aggregations.path.buckets[0][0].key.split('/') track by $index -->
+</ol>
