@@ -12,15 +12,15 @@
   "author": "burnworks (https://github.com/burnworks/)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/html": "^6.4.19",
-    "babel-loader": "^8.2.4",
+    "@babel/core": "^7.18.0",
+    "@storybook/addon-actions": "^6.5.3",
+    "@storybook/addon-essentials": "^6.5.3",
+    "@storybook/addon-links": "^6.5.3",
+    "@storybook/html": "^6.5.3",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "less": "^4.1.2",
-    "less-loader": "^10.2.0",
+    "less-loader": "^11.0.0",
     "storybook-preset-less": "^1.1.2",
     "style-loader": "^3.3.1"
   },
@@ -28,12 +28,12 @@
     "@fortawesome/fontawesome-free": "^6.1.1",
     "@pickra/copy-code-block": "^1.2.0",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-webpack5": "^6.4.19",
-    "@storybook/manager-webpack5": "^6.4.19",
-    "autoprefixer": "^10.4.4",
+    "@storybook/builder-webpack5": "^6.5.3",
+    "@storybook/manager-webpack5": "^6.5.3",
+    "autoprefixer": "^10.4.7",
     "normalize.css": "^8.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "storybook-less-loader": "^0.1.0",
-    "webpack": "^5.70.0"
+    "webpack": "^5.72.1"
   }
 }
